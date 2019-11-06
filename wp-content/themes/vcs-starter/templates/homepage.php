@@ -13,7 +13,8 @@ get_template_part('partials/adress');
 
 
 ?>
-<!-- <h2>Esame Homepage.php</h2> -->
-<!-- Start Point -->
+
 
 <?php get_footer(); ?>
+<!-- <h2>Esame Homepage.php</h2> -->
+<!-- Start Point -->
