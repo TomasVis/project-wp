@@ -2,6 +2,7 @@
 	display:block;
 	margin-bottom: 50px;
 	padding-bottom: 50px;
+
 }
 
 .video-container{
@@ -9,10 +10,13 @@
 	position:relative;
 	display:flex;
 }
-
+.vimeo-video{
+	position: relative;
+	z-index: 20;
+}
 .video:hover { 
 	.play-button-container{
-		border: solid 4px #19b7ea;
+/* 		border: solid 4px #19b7ea; */
 		i{
 			opacity: 1;
 		}
@@ -42,13 +46,18 @@
 	right: 0px;
 	display:flex;
 	justify-content:center;
+	-webkit-box-shadow: 0px 0px 16px 3px rgba(161,161,161,1);
+	-moz-box-shadow: 0px 0px 16px 3px rgba(161,161,161,1);
+	box-shadow: 0px 0px 16px 3px rgba(161,161,161,1);
 	img{
 		width: 100%;
+
 	}
 	
 	i{
 		opacity: 0.5;
 	}
+
 	
 }
 .shore-section {

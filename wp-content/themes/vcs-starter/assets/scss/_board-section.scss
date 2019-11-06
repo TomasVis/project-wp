@@ -7,7 +7,36 @@
 .boards p{
 		@include melynas-tekstas;
 	}
+
+
+
+
+
 .board-section{
+/* 	background-image: url("../images/background-waves_02-min.jpg" ); */
+/* 	background-color:rgba(0, 0, 0, 0.5); */
+    background-image: url("../images/transparency.png"),
+    linear-gradient(90deg,#fff,hsla(0,0%,100%,0) 25%,hsla(0,0%,100%,0) 75%,#fff),
+    linear-gradient(180deg,#fff,hsla(0,0%,100%,0) 25%,hsla(0,0%,100%,0) 75%,#fff),
+    linear-gradient(180deg,hsla(0,0%,100%,.9),hsla(0,0%,100%,.9)),
+    url("../images/background-waves_02-min.png");
+
+
+
+    background-position: 50% 0,0 0,0 0,0 0,50% 50%;
+    background-size: 100%,auto,auto,auto,cover;
+    background-repeat: repeat-y,repeat,repeat,repeat,no-repeat;
+    background-attachment: scroll,scroll,scroll,scroll,fixed;
+
+
+ /*    background-attachment:fixed; */
+
+
+
+
+
+
+
 	display: flex;
 	flex-direction:column;
 	position:relative;

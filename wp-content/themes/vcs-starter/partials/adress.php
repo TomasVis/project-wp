@@ -17,7 +17,7 @@
 
 						<?php
 							$link = get_field('as_link');
-							//dump($link);
+
 							if(!empty($link)):
 								?><div class = "with-horizontal-line">
 										
@@ -34,7 +34,7 @@
 
 						?>
 						
-						<!-- <div class = "horizontal-line"></div> -->
+
 					</div>
 				</div>
 

@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 	$('.burger').click(function(){
 
+
 					$('.nav').toggleClass('show');
 				});
 	$('li a').click(function(){
@@ -47,11 +48,14 @@ $(document).ready(function(){
 		nav: true,
 		dots: false,
 		loop: true,
+		stagePadding:50,
+		margin:50,
+		
 		onInitialized:init,
 		stagePadding:0,
 		navText: ["&#x3008;","&#x3009;"],
 		responsiveClass:true,
-    		responsive:{
+/*    		responsive:{
 	        0:{
 	            items:1           
 	        },
@@ -66,7 +70,7 @@ $(document).ready(function(){
 	        	items:1
 	        }
 	        
-    }
+    }*/
 	       		
 	});
 

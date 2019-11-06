@@ -27,7 +27,7 @@ html {
 
 body {
   background-color: #ffffff;
-  padding: 0 90px;
+  padding: 0 15%;
 }
 
 p {
@@ -66,34 +66,6 @@ h2 {
 .owl-carousel .owl-item img {
   display: block;
   width: auto;
-}
-
-body:after {
-  z-index: -10;
-  content: "";
-  width: 100%;
-  height: 150%;
-  position: absolute;
-  top: 270%;
-  left: 0;
-  right: 0;
-  background-image: url("../images/background-waves_02-min.jpg");
-  background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(254, 254, 254, 0) 40%, rgba(254, 254, 254, 0) 60%, #fefefe 100%), url("../images/background-waves_02-min.jpg");
-  opacity: 0.03;
-}
-
-body:before {
-  z-index: -10;
-  content: "";
-  width: 100%;
-  height: 150%;
-  position: absolute;
-  top: 560%;
-  left: 0;
-  right: 0;
-  background-image: url("../images/background-surfer-min.jpg");
-  background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(254, 254, 254, 0) 40%, rgba(254, 254, 254, 0) 60%, #fefefe 100%), url("../images/background-surfer-min.jpg");
-  opacity: 0.05;
 }
 
 .for-burger {
@@ -188,9 +160,12 @@ body:before {
   letter-spacing: 0.0054em;
 }
 
+.link-container {
+  margin-top: 34px;
+}
+
 i {
   text-align: center;
-  margin-top: 34px;
   min-width: 20px;
 }
 
@@ -243,6 +218,14 @@ li a {
   min-width: 16px;
 }
 
+.first-page .owl-carousel .owl-item img {
+  width: 100%;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 16px 3px #a1a1a1;
+  box-shadow: 0px 0px 16px 3px #a1a1a1;
+  /* min-height: 400px; */
+}
+
 .first-page {
   padding-top: 65px;
   position: relative;
@@ -250,7 +233,7 @@ li a {
 
 .first-page .owl-carousel .owl-item img {
   width: 100%;
-  min-height: 400px;
+  /* 		min-height:400px; */
 }
 
 .first-page .owl-nav {
@@ -282,18 +265,22 @@ li a {
 }
 
 .photo {
+  margin-right: 40px;
   margin-left: 208px;
 }
 
 .photo img {
   -o-object-fit: cover;
   object-fit: cover;
+  /* 			-webkit-box-shadow: 0px 0px 16px 3px rgba(161,161,161,1);
+	-moz-box-shadow: 0px 0px 16px 3px rgba(161,161,161,1);
+	box-shadow: 0px 0px 16px 3px rgba(161,161,161,1); */
 }
 
 .paragraph {
   position: absolute;
   z-index: 10;
-  top: 25%;
+  top: 10%;
 }
 
 .paragraph p:nth-child(1) {
@@ -389,12 +376,17 @@ h1 {
   display: flex;
 }
 
+.vimeo-video {
+  position: relative;
+  z-index: 20;
+}
+
 .video:hover {
   cursor: pointer;
 }
 
 .video:hover .play-button-container {
-  border: solid 4px #19b7ea;
+  /* 		border: solid 4px #19b7ea; */
 }
 
 .video:hover .play-button-container i {
@@ -432,6 +424,9 @@ h1 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-shadow: 0px 0px 16px 3px #a1a1a1;
+  -moz-box-shadow: 0px 0px 16px 3px #a1a1a1;
+  box-shadow: 0px 0px 16px 3px #a1a1a1;
 }
 
 .video img {
@@ -513,6 +508,17 @@ h1 {
 }
 
 .board-section {
+  /* 	background-image: url("../images/background-waves_02-min.jpg" ); */
+  /* 	background-color:rgba(0, 0, 0, 0.5); */
+  background-image: url("../images/transparency.png"), -webkit-gradient(linear, left top, right top, from(#fff), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0)), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0)), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../images/background-waves_02-min.png");
+  background-image: url("../images/transparency.png"), -webkit-linear-gradient(left, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -webkit-linear-gradient(top, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-waves_02-min.png");
+  background-image: url("../images/transparency.png"), -o-linear-gradient(left, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -o-linear-gradient(top, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-waves_02-min.png");
+  background-image: url("../images/transparency.png"), linear-gradient(90deg, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), linear-gradient(180deg, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-waves_02-min.png");
+  background-position: 50% 0,0 0,0 0,0 0,50% 50%;
+  background-size: 100%,auto,auto,auto,cover;
+  background-repeat: repeat-y,repeat,repeat,repeat,no-repeat;
+  background-attachment: scroll,scroll,scroll,scroll,fixed;
+  /*    background-attachment:fixed; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,6 +655,7 @@ h1 {
 .text-block {
   margin-top: 88px;
   margin-left: 73px;
+  margin-right: 73px;
   position: relative;
 }
 
@@ -733,6 +740,14 @@ form {
 }
 
 .form-section {
+  background-image: url("../images/transparency.png"), -webkit-gradient(linear, left top, right top, from(#fff), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0)), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0)), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../images/background-surfer-min.jpg");
+  background-image: url("../images/transparency.png"), -webkit-linear-gradient(left, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -webkit-linear-gradient(top, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-surfer-min.jpg");
+  background-image: url("../images/transparency.png"), -o-linear-gradient(left, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -o-linear-gradient(top, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-surfer-min.jpg");
+  background-image: url("../images/transparency.png"), linear-gradient(90deg, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), linear-gradient(180deg, #fff, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #fff), linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background-surfer-min.jpg");
+  background-position: 50% 0,0 0,0 0,0 0,50% 50%;
+  background-size: 100%,auto,auto,auto,cover;
+  background-repeat: repeat-y,repeat,repeat,repeat,no-repeat;
+  background-attachment: scroll,scroll,scroll,scroll,fixed;
   margin-top: 60px;
   position: relative;
   -webkit-box-orient: vertical;
@@ -903,6 +918,7 @@ form input:nth-child(1) {
     flex-direction: column;
   }
   body {
+    padding: 0 10%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

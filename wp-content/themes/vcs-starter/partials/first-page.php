@@ -1,19 +1,13 @@
-		<section class="first-page">
-
-			
-			
+		<section class="first-page">						
 			<div class="container1 owl-carousel owl-theme">
 				
-
 								<?php
 				if(have_rows('fp_photos_repeater')):
 					while(have_rows('fp_photos_repeater')):
 						the_row();
-						//get_sub_field('lauko_pavadinimas'); //grazina
-						//the_sub_field('lauko_pavadinimas'); //spausdina
 						$image = get_sub_field('image');
 						?>
-<div class = "first-page-elements">
+						<div class = "first-page-elements">
 						<div class= "photo">
 							<img src="<?php echo $image['sizes']['main-photo']; ?>" alt="<?php echo $image['alt'] ?>" />
 						</div>
@@ -35,19 +29,12 @@
 				?>
 
 			
-		</div>
-			
+			</div>			
 			<div class = "numbering">
 			</div>
-
-
 			<div class ="owl-nav">
 			</div>
-			
-		        <!-- <div class="owl-prev"></div>
-		        <div class="owl-next"></div> -->
     		</div> 
-			<!-- <div class = 'customNav owl-nav'></div> -->
 			<div class = "outside-content">
 					<p>FIRST SURFING MAGAZINE</p>					
 			</div>

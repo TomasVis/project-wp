@@ -9,8 +9,7 @@
 				if(have_rows('sf_stories_repeater')):
 					while(have_rows('sf_stories_repeater')):
 						the_row();
-						//get_sub_field('lauko_pavadinimas'); //grazina
-						//the_sub_field('lauko_pavadinimas'); //spausdina
+
 
 						$image = get_sub_field('photo');
 						$check = get_sub_field('story_nr');
@@ -20,7 +19,7 @@
 							?>
 							<div class = "article-block">
 								<div class = "text-block">
-									<p><?php the_sub_field('story_nr'); ?></p> <!-- big number -->
+									<p><?php the_sub_field('story_nr'); ?></p> 
 									<h2><?php the_sub_field('heading'); ?></h2>
 									<p><?php the_sub_field('paragraph'); ?></p>
 									<div class = "with-horizontal-line">

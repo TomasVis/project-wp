@@ -1,8 +1,14 @@
 		<section class = "video-section">
+
+			<div class = vimeo-video>
+						
+					</div>
+
 			<div class = "video-container">
 				
 
 				<div class ="video">
+					
 					<?php 
 
 						$image = get_field('vs_video');

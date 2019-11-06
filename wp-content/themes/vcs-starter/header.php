@@ -60,7 +60,7 @@
 									if(!empty($linkas)):
 
 								?>
-									<a href="<?php echo $linkas['url']; ?>" rel= "nofolow" 
+									<a class="link-container" href="<?php echo $linkas['url']; ?>" rel= "nofolow" 
 										<?php echo $linkas['target'] !='' ? 'target="_blank"' : '' ?>
 										><?php echo $ikona; ?></a>
 								<?php
