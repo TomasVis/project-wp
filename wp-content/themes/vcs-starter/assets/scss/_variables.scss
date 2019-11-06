@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('subset-LeagueSpartan-Bold.eot');
+    src: url('subset-LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-LeagueSpartan-Bold.woff2') format('woff2'),
+        url('subset-LeagueSpartan-Bold.woff') format('woff'),
+        url('subset-LeagueSpartan-Bold.ttf') format('truetype'),
+        url('subset-LeagueSpartan-Bold.svg#LeagueSpartan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$sriftas: 'Roboto', sans-serif;
+$pagr_teksto_spalva: #e2e2e2;
+$background: #ffffff;
+$nav-teksto-spalva: #0b0c11;
+$juodas-tekstas: #5da8ef;
+$pilkas-tekstas: #8f8f8f;
+$citata: #333333;
+$plonyte-pilka-linija: #f5f5f5;
+$melyna-linija: #5da8ef;
+$dideli-skaiciai: #f9f9f9;
+$kainos: #ce60a8;
+
+@mixin melynas-tekstas{
+
+	opacity: 0.9;
+	color: #5da8ef;
+	font-family: "League Spartan";
+	font-size: 0.5625rem;
+	font-weight: 700;
+	//line-height: 7.333;
+	letter-spacing: 0.6em;
+}
+
+@mixin paragrafas{
+
+	color: #8f8f8f;
+	font-family: Poppins;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.714;
+	/* Text style for "O, ne of t" */
+	letter-spacing: 0.025em;
+}
+@mixin outside-tekst{
+
+
+	opacity: 0.2;
+	color: #0b0c11;
+	font-family: "League Spartan";
+	font-size: 0.5625rem;
+	font-weight: 700;
+	line-height: 7.333;
+	letter-spacing: 0.0054em;
+}
+
+@mixin quote-text{
+
+	opacity: 0.9;
+	color: #333333;
+	font-family: "Playfair Display";
+	font-size: 1.625rem;
+	font-weight: 400;
+	line-height: 38px;
+	letter-spacing: 0.26px;
+}
+
+@mixin author{
+
+	opacity: 0.9;
+	color: #333333;
+	font-family: "League Spartan";
+	font-size: 9px;
+	font-weight: 700;
+	line-height: 7.3333em;
+	letter-spacing: 5.4px;
+}
+	@mixin board-name{
+	color: #7a7a7a;
+	font-family: Poppins;
+	font-size: 0.75rem;
+	font-weight: 300;
+	letter-spacing: 0.0024em;
+}
+
+@mixin kaina{
+	color: #ce60a8;
+	font-family: Poppins;
+	font-size: 1.25rem;
+	font-weight: 300;
+	letter-spacing: -0.0001em;
+}
+
+@mixin dideli-skaiciai{
+	color: #f9f9f9;
+	font-family: "League Spartan";
+	font-size: 8.125rem;
+	font-weight: 700;
+	line-height: 0.5;
+	letter-spacing: 0.013em;
+}
+@mixin kitas-paragrafas{
+	opacity: 0.65;
+	color: #616161;
+	font-family: Poppins;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.714;
+	letter-spacing: 0.00035em;
+}

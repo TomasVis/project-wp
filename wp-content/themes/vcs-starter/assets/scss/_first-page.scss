@@ -1,0 +1,80 @@
+.first-page {
+	padding-top:65px;
+	position:relative;
+
+	.owl-carousel .owl-item img {
+		width: 100%;
+		min-height:400px;
+	}
+
+	.owl-nav{
+	position: absolute;
+	bottom: 0;
+		.owl-prev{
+		margin-left:-15px;
+		}
+	.owl-next {
+		margin-left:50px;
+		}
+	}
+	p:nth-child(3){
+		max-width: 400px;
+		@include paragrafas;	
+	}	
+}
+
+.first-page-elements{
+	position: relative;
+
+}
+
+.photo{
+	margin-left: 208px;
+	img{
+		object-fit:cover;
+	}
+
+}
+
+
+.paragraph {
+	position: absolute;
+	z-index: 10;
+	top:25%;
+}
+
+.paragraph p:nth-child(1){
+	@include melynas-tekstas;
+}
+
+
+h1{
+	padding: 30px 0 30px 0;
+	margin:0;
+	color: #0b0c11;
+	font-family: "Playfair Display";
+	font-size: 3.875rem;
+	font-weight: 700;
+	line-height: 1.0325;
+}
+
+
+.fab{
+	color: #ebebeb;
+}
+
+
+.numbering{
+	letter-spacing: 0.5em;
+	font-size: 10px;
+	position: absolute;
+	  	bottom: 10px;
+	  	left: 10px;
+
+}
+.numbering::first-letter { 
+
+  color: #5da8ef;
+}
+
+

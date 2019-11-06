@@ -1,0 +1,177 @@
+@media all and (max-width: 1200px){
+	.video-section{
+		display: flex;
+		flex-direction: column;
+	}
+
+ 	.video{
+ 		//margin-bottom: 50px;
+ 		position:static;
+ 	}
+ 	.shore-section{
+ 		padding-top: 50px;
+ 	}
+ 	.adress div{
+	flex-direction: column;	
+	}
+  
+}
+
+@media all and (max-width: 900px){
+	 section, .article-block {
+ 		flex-direction: column;
+ 	}
+	img{
+ 		width: 100%;
+ 	}
+ 	.nav{
+ 		flex-direction: row;
+ 	}
+	.video-container, .cont, .adress-cont{
+ 		flex-direction:column;
+ 	}
+	body{
+	 	flex-direction: column;
+	}
+	.picture{
+		margin-left: 0;
+	}
+	.photo{
+	 	margin-left:80px;
+	}
+	.numbering {		
+		  margin-left: 2px;
+	}
+	.nav ul{
+		margin-left: 50px;
+	}
+
+	form input:nth-child(1){	
+		padding-left: 29px;
+		width: 250px;
+		height: 50px;
+		border: none;
+		background-color: #f5f5f5;
+	}
+
+
+} 
+
+@media all and (max-width: 600px){
+
+	.nav.show{
+
+	
+		.navigation{
+			display: flex;
+			ul{
+				margin-left: 0;
+				flex-direction: column;
+				li{
+					a{
+						line-height: 3;
+					}
+				}
+			}
+		}
+		.social-media{
+			width: auto;
+			display: flex;
+			bottom: 0;
+			left:0;
+			justify-content: space-between;
+			a{
+				i{
+					margin-top: 5px;
+					
+				}
+			}					
+		}
+	}
+
+
+	.first-page {
+		.owl-nav{			
+			position: static;								
+		}
+	}
+	.burger{
+
+		display: block;
+		position: fixed;
+		top:-10px;
+		right: 10px;
+		z-index: 20;
+	}
+	.icon, .navigation, .social-media{
+		display: none
+	}
+
+	.outside-content, .outside-content1{
+		display:none;
+	}
+	
+
+	.photo{
+	 	margin-left:0;
+	}
+
+	body{
+	 	padding-left: 20px;
+	 	padding-right: 20px;
+	 	flex-direction: column;
+
+	}
+
+	.paragraph {
+		position: relative;
+		
+	}
+	.container1{
+		.owl-prev, .owl-next {
+			position: absolute;
+			bottom: 40%;
+			transform: translateY(-50%);
+		}
+
+		.owl-prev {
+		  left: -0.5rem;
+		}
+
+		.owl-next {
+		  right: -2rem;
+		}
+	}
+	.board-section{
+		.owl-prev {
+	  		left: -1rem;
+		}
+
+		.owl-next {
+	  		right: -1rem;
+		}
+	}
+	.cont{
+		flex-direction: column;
+	}
+
+
+
+	.footer ul li{
+		margin:0 10px;
+		}
+	.adress-paragraph{
+			p, h2{
+				margin-top: 10px;
+			}
+		}
+	.numbering{
+		display:none;
+	}
+	.video{
+ 		max-height: 400px;
+ 	}
+ 	.paragraph{
+ 		margin-top: 10px;
+ 	}
+}

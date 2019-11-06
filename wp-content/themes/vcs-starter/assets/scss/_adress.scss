@@ -1,0 +1,34 @@
+
+.adress-cont{
+	display: flex;	
+}
+.adress{
+	img{
+		width:100%;
+	}
+}
+.adress-paragraph{
+	p{
+		@include outside-tekst;
+		margin-top: 105px;
+		margin-left: 44px;
+		line-height: 1;
+	}
+	h2{
+		max-width: 336px;
+		font-size: 2rem;
+		margin-left: 92px;
+		margin-top: 60px;
+	}
+	.with-horizontal-line{
+		margin-top: 67px;
+		margin-left: 43px;
+		a{
+		@include melynas-tekstas;
+		text-decoration: none;		
+		}
+	}
+}
+	
+	
+

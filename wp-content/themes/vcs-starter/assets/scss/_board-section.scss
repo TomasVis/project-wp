@@ -1,0 +1,75 @@
+.boards{
+	
+		text-align: center;
+		margin-top: 230px;
+	
+}
+.boards p{
+		@include melynas-tekstas;
+	}
+.board-section{
+	display: flex;
+	flex-direction:column;
+	position:relative;
+
+	.owl-prev,
+	.owl-next {
+	  position: absolute;
+	  top: 60%;
+	  transform: translateY(-50%);
+	}
+
+	.owl-prev {
+	  left: -2rem;
+	}
+
+	.owl-next {
+	  right: -2rem;
+	}
+}
+
+.board{
+	display: flex;
+
+} 
+
+.aprasymas{
+	position: absolute;
+	z-index: 100;
+	h6{
+		@include quote-text;
+	}
+	margin-left: 200px;
+}
+.pilkas-backgroundas{
+	position:absolute;	
+	bottom: 0; 
+	z-index: -1;
+	max-width: 226px;
+}
+
+.with-horizontal-line{
+ 
+		a{
+			text-decoration: none;
+			padding-left: 5px;
+			@include author;			
+			line-height: 1em;										
+		}		
+	}
+
+.aprasymas{
+	p:nth-child(1){
+		margin-top: 196px;
+		@include board-name;
+	}
+	p:nth-child(3){
+		@include kaina;
+		text-align: center;
+	}
+	p:nth-child(4){
+		@include author;
+		text-align: center;
+		line-height: 0.1;
+	}		
+}

@@ -1,0 +1,53 @@
+.articles{
+	flex-direction: column;
+	align-items: flex-start;
+	> p:nth-child(1){
+		@include dideli-skaiciai;
+	}
+
+	
+}
+.article-block{
+	margin-top: 122px;
+	display: flex;
+
+}
+
+.articles-image{
+	position: relative;
+
+	img{
+		width:100%;
+	}
+
+}
+
+.text-block{
+	margin-top:88px;
+	margin-left:73px;
+	position: relative;
+	> p:nth-child(1){
+		
+		position: absolute;
+		top:-28px;
+		@include dideli-skaiciai;
+		z-index: -1;
+	}
+	> p:nth-child(3){
+		max-width: 400px;
+		@include kitas-paragrafas;
+		margin-top: 57px;
+		margin-bottom: 65px;
+	}
+}
+
+.outside-content1 {
+	transform: rotate(270deg);
+	position: absolute;
+	top:10px;
+	right: -60px;
+	p{
+		@include outside-tekst;
+		
+	}
+}

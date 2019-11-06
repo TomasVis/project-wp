@@ -1,0 +1,97 @@
+.video-section{
+	display:block;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+.video-container{
+
+	position:relative;
+	display:flex;
+}
+
+.video:hover { 
+	.play-button-container{
+		border: solid 4px #19b7ea;
+		i{
+			opacity: 1;
+		}
+	}
+	cursor:pointer;  
+}
+
+.play-button-container{
+
+	position: absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.shore-section{
+	max-width: 613px; 
+}
+.video{
+	max-width: 706px;
+	position: absolute; 
+	top:43px;
+	right: 0px;
+	display:flex;
+	justify-content:center;
+	img{
+		width: 100%;
+	}
+	
+	i{
+		opacity: 0.5;
+	}
+	
+}
+.shore-section {
+	.with-horizontal-line{
+		margin-left: 107px;
+		margin-top: 59px; 
+		
+	}
+	
+
+	 > p{
+		@include paragrafas;
+			max-width: 336px;
+			margin-top:49px;
+			margin-left: 107px;
+	}
+}
+
+.with-horizontal-line{
+	display: inline-block;
+	margin-bottom: 20px;
+	a{
+			text-decoration: none;
+			padding-left: 5px;
+			@include author;
+			
+			line-height: 1em;
+					
+	}
+}
+
+.with-horizontal-line:after {
+
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 99%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    padding-right: 10px;
+    border-bottom: 2px solid #5da8ef; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+.fas{
+	color:  #19b7ea;
+}

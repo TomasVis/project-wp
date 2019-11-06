@@ -1,0 +1,38 @@
+.for-burger{
+	z-index: 100;
+	position: fixed;
+	align-items:flex-start;
+	flex-direction:row;
+	ul{
+		padding-left: 0;
+
+
+	}
+	a{
+		margin-left: 15px;
+		line-height: 3;
+	}
+}
+
+.burger{
+	display: none;
+
+}
+.burger-navigation{
+	background-color: #fff;
+	display: none;
+	ul{
+		display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+		li{
+			margin-left:10px;
+			margin:0;
+		}
+	}		
+}
+.burger-navigation.show{
+	display: flex;
+	flex-direction:row;
+
+}

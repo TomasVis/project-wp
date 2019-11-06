@@ -1,0 +1,13 @@
+.footer{
+	margin-top: 98px;
+	margin-bottom: 98px;
+	flex-direction: column;
+	ul{
+		display:flex;
+		flex-direction: row;
+	}
+	i{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}

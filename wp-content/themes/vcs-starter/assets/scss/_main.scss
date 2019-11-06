@@ -1,0 +1,86 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color: $background;
+	padding:0 90px;
+}
+
+p{
+	font-family: $sriftas;
+	color: $pagr_teksto_spalva;
+	margin:0;
+}
+
+section {	
+	display:flex;
+	margin: 0 auto;
+	justify-content: flex-start;
+	align-items: center;
+}
+img{
+	display: block;
+}
+
+h2{
+	margin:0;
+	color: #333333;
+	font-family: "Playfair Display";
+	font-size: 2.625rem;
+	font-weight: 700;
+	line-height: 1.571;
+	letter-spacing: 0.0004em;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width:auto;
+}
+
+body:after{
+	z-index: -10;
+ 	content: "";
+ 	width:100%;
+ 	height: 150%;
+	position: absolute;	
+	top: 270%;
+	left:0;
+	right:0;
+    background-image: url("../images/background-waves_02-min.jpg" );
+    
+    background-image: -webkit-linear-gradient(top, 
+   rgba(254,254,254,1) 0%, 
+    rgba(254,254,254,0) 40%,
+    rgba(254,254,254,0) 60%,
+    rgba(254,254,254,1) 100%
+  ),
+  url("../images/background-waves_02-min.jpg" );  
+opacity: 0.03;
+
+} 
+body:before{
+	z-index: -10;
+ 	content: "";
+ 	width:100%;
+ 	height: 150%;
+	position: absolute;	
+	top: 560%;
+	left:0;
+	right:0;
+    background-image: url("../images/background-surfer-min.jpg" );
+    background-image: -webkit-linear-gradient(top, 
+
+   	rgba(254,254,254,1) 0%, 
+    rgba(254,254,254,0) 40%,
+    rgba(254,254,254,0) 60%,
+    rgba(254,254,254,1) 100%
+  	),
+  	url("../images/background-surfer-min.jpg" );  
+    
+	opacity: 0.05;
+
+}  
+
+
